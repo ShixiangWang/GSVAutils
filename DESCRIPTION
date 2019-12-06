@@ -1,0 +1,40 @@
+Type: Package
+Package: GSVAutils
+Title: GSVA and Related Functions for Tumor Immunogenicity Score
+    Project
+Version: 0.1.0
+Author: Shixiang Wang
+Maintainer: Shixiang Wang <w_shixiang@163.com>
+Description: Immunotherapy, represented by immune checkpoint
+    inhibitors (ICI), is transforming the treatment of cancer. However,
+    only a small percentage of patients show response to ICI, and there is
+    an unmet need for biomarkers that will identify patients who are more
+    likely to respond to immunotherapy. The fundamental basis for ICI
+    response is the immunogenicity of a tumor, which is primarily
+    determined by tumor antigenicity and antigen presentation efficiency.
+    Here, we propose a method to measure tumor immunogenicity score
+    (TIGS), which combines tumor mutational burden (TMB) and an expression
+    signature of the antigen processing and presenting machinery (APM).
+    In both correlation with pan-cancer ICI objective response rates (ORR)
+    and ICI clinical response prediction for individual patients, TIGS
+    consistently showed improved performance compared to TMB and other
+    known prediction biomarkers for ICI response. This study suggests that
+    TIGS is an effective tumor-inherent biomarker for ICI-response
+    prediction.
+License: Apache License (>= 2.0)
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    Biobase,
+    dplyr,
+    GSVA,
+    magrittr,
+    rlang (>= 0.1.2),
+    tibble
+Suggests: 
+    roxygen2
+biocViews:
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.0
